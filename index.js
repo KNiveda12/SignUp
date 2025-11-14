@@ -11,3 +11,16 @@ function signup(username)
 }
 console.log(signup("Niveda"));
 console.log(signup("Greesh"));
+
+//login function in login branch
+function login(username,password)
+{
+    let users = ["Raju","Varma","David"];
+    if(!users.includes(username))
+        return "User Not Found, Please Signup."
+    if(password === "Emp@123")
+        return "Login Successfull..."
+    else
+        return "Wrong Password..."
+}
+console.log(login("Raju","Emp@123"));
